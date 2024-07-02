@@ -10,27 +10,35 @@
 <link href="https://fonts.googleapis.com/css2?family=M+PLUS+Rounded+1c&display=swap" rel="stylesheet">
   </head>
   <body>
+
     <div class="weather-app">
     <header>
-      <form>
-        <input type="search" placeholder="Enter a city..." required/>
-        <input type="submit" value="Search"
+      <form class="search-form">
+        <input type="search" placeholder="Enter a city..." required class="search-form-input"/> 
+        <input type="submit" value="Search" class="search-form-button"/>
       </form>
     </header>
 
     <main>
-      <div>
-      <h1>Baton Rouge</h1>
-      <p>
-        Tuesday 14:49, scattered clouds
-        <br />
-        Humidity: 66%, Wind: 3.13km/h 
-      </p>
+      <div class="weather-app-data">
+        <div>
+          <h1 class="weather-app-city">Baton Rouge</h1>
+          <p class="weather-app-details">
+          Tuesday 14:49, scattered clouds
+          <br />
+          Humidity: <strong>66%</strong>, Wind: <strong>3.13km/h</strong> 
+          </p>
+        </div>
+
+        <div class="weather-app-container">
+          <div class="weather-app-emoji">🌤️</div>
+         <div class="weather-app-temperature">12</div>
+         <div class="weather-app-unit">°F </div>
+        </div>
       </div>
-      <div>🌤️ 12°F </div>
     </main>
+
     <footer>
-      </div>
       Coded by
       <a href="https://github.com/1victoriao" target="_blank">Victoria O.A.,</a>
       hosted on
@@ -44,8 +52,8 @@
       >
         Netlify.
       </a>
-         </footer>
-     
-    </footer>
-  </body>
+      </footer>
+         </div>
+        
+    </body>
 </html>
